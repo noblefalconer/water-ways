@@ -1,0 +1,53 @@
+.AddLocation{
+    height: 100%;
+    text-align: center;
+}
+
+.StepDots{
+    display: inline-block;
+    margin: auto;
+}
+
+.Stepper{
+    display: block;
+    margin: auto;
+}
+
+.addTitle{
+    background-color: #3BA8FA;
+    padding: 1px;
+}
+.addh2{
+    color:white;
+}
+p{
+    text-align: left;
+    padding-left: 7px;
+}
+.addh3{
+    text-align: left;
+    padding-left: 10px;
+}
+.selectTitle{
+    background-color: #3BA8FA;
+    padding: 1px;
+}
+.addAddressTitle{
+    background-color: #3BA8FA;
+    padding: 1px;
+}
+.addTextField{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.mapSpacer{
+    width: 100vw;
+    height: 60px;
+}
+
+.TextInput{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 100%;
+}
