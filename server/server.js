@@ -36,6 +36,11 @@ app.use('/api/photo', photoRouter);
 app.use('/api/reviews', reviewRouter);
 app.use('/api/reports', reportsRouter);
 
+//publicly available route for LetsEncrypt Certificate challenge
+app.get('/.well-known/acme-challenge/JpaXN9YEdI5mHDusz-iCNtH-WhJbnC7aiPBuuarR8xY', function(req, res) {
+  res.send('JpaXN9YEdI5mHDusz-iCNtH-WhJbnC7aiPBuuarR8xY.er-NmTXLrxlKLvzU3LfbdYrBTsHQQ9bsNXz1GBcNAfI');
+});
+
 // Serve static files
 app.use(express.static('build'));
 
