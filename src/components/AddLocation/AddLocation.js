@@ -217,7 +217,10 @@ class AddLocation extends Component {
                 </GoogleMap>
               </LoadScript>
             </div>
-            <div className="mapSpacer"></div>
+            <div className="mapSpacer">
+              <h5>Latitude: {this.state.locationToAdd.latitude}</h5>
+              <h5>Longitude: {this.state.locationToAdd.longitude}</h5>
+            </div>
             <h5>Add the nearest Address</h5><br />
             <div className='addTextField'>
             <TextField
