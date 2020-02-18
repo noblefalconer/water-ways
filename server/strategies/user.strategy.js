@@ -36,7 +36,7 @@ passport.use('local', new LocalStrategy((username, password, done) => {
     pool.query('SELECT * FROM "user" WHERE username = $1', [username])
       .then((result) => {
         const user = result && result.rows && result.rows[0];
-        if(user.status == 'deleted'){
+        if(user.status == 'Inactive'){
           console.log('user to log in XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', user);
           console.log('user has been deleted by admin');
           done(null, null);
