@@ -44,7 +44,8 @@ class RegisterPage extends Component {
           password: this.state.password,
           first: this.state.first,
           last: this.state.last,
-          admin: 1
+          admin: 1,
+          status: 'active'
         },
       })
     } else {
