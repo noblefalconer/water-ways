@@ -79,9 +79,8 @@ class ModerateSingleLocation extends Component {
     } // end componentDidMount
 
     componentDidUpdate(prevProps) {
-
+        //populates fields with selected location details
         if (this.props.reduxStore.SingleLocationReducer !== prevProps.reduxStore.SingleLocationReducer) {
-            // let array = [];
             console.log(this.props.reduxStore.SingleLocationReducer.photo_primary)
             this.props.reduxStore.SingleLocationReducer.map(location => {
                 this.setState({
@@ -115,10 +114,10 @@ class ModerateSingleLocation extends Component {
     handleChange = (event, propertyName) => {
         this.setState({
             location: {
-                [propertyName]: event.target.value,
-                [propertyName]: !event.target.value,
+              ...this.state.location,
+              [propertyName]: event.target.value,
             }
-        })
+          });
     }
 
     handleToggle = (propertyName, boolean) => {
